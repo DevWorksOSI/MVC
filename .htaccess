@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteCond %{HTTP_HOST} devworksosi\.tech [NC]
+	RewriteCond %{REQUEST_URI} ^/$
+	RewriteRule ^(.*)$ /us/$1 [L]
+  #RewriteRule ^$ public/ [L]
+  #RewriteRule (.*) public/$1 [L]
+</IfModule>
